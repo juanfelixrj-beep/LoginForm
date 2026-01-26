@@ -38,4 +38,6 @@ input{
     color: White;
     width: 180px;
     height: 40px;
+    border: none;
+    cursor: pointer;
 }
