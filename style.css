@@ -1,0 +1,41 @@
+body{
+    margin: auto;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Inter";
+    font-size: 15px;
+}
+fieldset{
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+input{
+    border-radius: 5px;
+    width: 180px;
+    height: 25px;
+}
+
+.password-toogle{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 5px;
+    
+}
+
+#submit{
+    border-radius: 5px;
+    background-color: black;
+    color: White;
+    width: 180px;
+    height: 40px;
+}
