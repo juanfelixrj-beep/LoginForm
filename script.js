@@ -2,6 +2,7 @@ const toogleBTN = document.querySelector("#password-toogle");
 const passwordInput = document.querySelector("#password-input");
 const toogleConfirmBTN = document.querySelector("#password-confirm-toogle");
 const passwordConfirmInput = document.querySelector("#password-confirm-input");
+const form = document.querySelector("#form")
 
 const submitBTN = document.querySelector("#submit");
 
@@ -25,7 +26,7 @@ toogleConfirmBTN.addEventListener("click", () =>{
     }
 });
 
-submitBTN.addEventListener("click", () =>{
+form.addEventListener("submit", e =>{
     if(passwordInput.value !== passwordConfirmInput.value){
         alert("Passwords do not match!");
     }else{
