@@ -55,5 +55,9 @@ Nenhuma dependência adicional ou etapas de compilação são necessárias.
 
 Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
 
+## Screenshot
+
+![PreviewImage](preview/image.png)
+
 ## Para Teste
 https://loginform-c5kv.onrender.com
