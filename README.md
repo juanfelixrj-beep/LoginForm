@@ -129,6 +129,10 @@ Abrir `index.html` no navegador.
 
 Usar Live Server no VS Code.
 
+## Opção 3 (Link de teste)
+
+https://loginform-4iqg.onrender.com
+
 ------------------------------------------------------------------------
 
 # ⚠️ Aviso de Segurança
