@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Login</h1>
+        <h3>Welcome back!</h3>
+        <form id="form">
+            <div class="email">
+                <label for="email-input">Email:</label>
+                <br>
+                <input type="email" id="email-input" required>
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" required>
+            </div>
+            <div class="submit">
+                <button type="submit" id="submitbtn">Send</button>
+            </div>
+            <a href="../index.html">Register</a>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="module" src="login.js"></script>
+
+</html>

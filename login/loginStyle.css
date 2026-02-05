@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     display: flex;
     align-items: center;
@@ -9,25 +9,29 @@ body{
     font-size: 15px;
     background-image: linear-gradient(to right, #4F46E5, #9333EA);
 }
-.card{
+
+.card {
     background-color: #FFFFFF;
-    width: 400px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 10px 10px 1px rgba(0, 0, 0, .18);
 }
-.card input{
+
+.card input {
     width: 350px;
     height: 42px;
     border-radius: 10px;
     transition: box-shadow .25s ease;
     font: inherit;
 }
-.card input:focus{
-    box-shadow: 0 0 0 4px rgba(79,70,229,.15);
+
+.card input:focus {
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, .15);
 }
-.card button{
+
+.card button {
     background-color: #9333EA;
     width: 350px;
     height: 50px;
@@ -35,10 +39,7 @@ body{
     border: none;
     border-radius: 5px;
 }
-progress{
-    width: 350px;
-    height: 25px;
-}
-form > div{
+
+form>div {
     margin-bottom: 15px;
 }

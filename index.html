@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Register</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <div class="login">
-        <fieldset>
-            <form id="form">
-                <legend><h1>Register</h1></legend>
-                <div class="form">
-                    <div id="name">
-                        <label for="name-input">Full Name:</label>
-                        <br>
-                        <input type="text" name="name" id="name-input" placeholder="What should we call you?" required>
-                    </div>
-                    <br>
-                    <div id="email">
-                        <label for="email-input">Email:</label>
-                        <br>
-                        <input type="email" name="email" id="email-input" placeholder="example@test.com" required>
-                    </div>
-                    <br>
-                    <div id="password">
-                        <label for="password-input">Password:</label>
-                        <br>
-                        <input type="password" name="password" id="password-input" placeholder="xxxxxxxx" required>
-                        <button type="button" class="password-toogle" id="password-toogle">
-                            <i class="bi bi-eye-fill"></i>
-                        </button>
-                    </div>
-                    <br>
-                    <div id="password-confirm">
-                        <label for="password-confirm-input">Confirm Password:</label>
-                        <br>
-                        <input type="password" name="password-confirm" id="password-confirm-input" placeholder="xxxxxxxx" required>
-                        <button type="button" class="password-toogle" id="password-confirm-toogle">
-                            <i class="bi bi-eye-fill"></i>
-                        </button>
-                    </div>
-                    <br>
-                    <div id="submit-button">
-                        <button id="submit" type="submit">Send</button>
-                    </div>
-                </div>
-            </form>
-        </fieldset>
-    </div>
 
-    <script src="script.js"></script>
+<body>
+    <div class="card">
+        <h1>Register</h1>
+        <h3 class="subtitle">Create your account</h3>
+        <form id="form">
+            <div class="name">
+                <label for="name">Full name:</label>
+                <br>
+                <input type="text" id="name-input" placeholder="Type your name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email-input" placeholder="example@email.com" required>
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password-input" placeholder="Type your password" required>
+            </div>
+            <div class="password-confirm">
+                <label for="password-confirm">Confirm your password:</label>
+                <br>
+                <input type="password" id="password-confirm-input" placeholder="Confirm your password" required>
+            </div>
+            <div class="submit">
+                <button type="submit" id="submit-button">Send</button>
+            </div>
+            <div class="progress">
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+            <a href="./login/login.html">Login</a>
+        </form>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="module" src="script.js"></script>
+
 </html>

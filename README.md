@@ -1,63 +1,152 @@
-# LoginForm
+# 🔐 Sistema de Cadastro e Login com JavaScript
 
-Um formulário de registro simples e elegante construído com HTML, CSS e JavaScript. Este projeto fornece uma interface amigável para registro de usuários, incluindo confirmação de senha e alternância de visibilidade.
+Este é um projeto simples de **sistema de autenticação (cadastro e
+login)** feito apenas com **HTML, CSS e JavaScript puro**, utilizando o
+**LocalStorage** do navegador como armazenamento de dados.
 
-## Funcionalidades
+O objetivo do projeto é estudar:
 
-- **Formulário de Registro de Usuário**: Coleta nome completo, email, senha e confirmação de senha.
-- **Alternância de Visibilidade de Senha**: Permite que os usuários mostrem ou ocultem a entrada de senha para melhor usabilidade.
-- **Confirmação de Senha**: Garante que as senhas correspondam antes do envio.
-- **Design Responsivo**: Layout centralizado que funciona em vários tamanhos de tela.
-- **UI Moderna**: Estilizado com estética limpa usando Google Fonts e Bootstrap Icons.
+-   Manipulação do DOM
+-   LocalStorage
+-   Módulos JavaScript
+-   Redirecionamento entre páginas
+-   Lógica de autenticação básica
 
-## Tecnologias Utilizadas
+------------------------------------------------------------------------
 
-- **HTML5**: Estrutura da página web.
-- **CSS3**: Estilização e layout.
-- **JavaScript**: Funcionalidade interativa para alternâncias de senha e validação de formulário.
-- **Bootstrap Icons**: Ícones para alternância de visibilidade de senha.
-- **Google Fonts**: Família de fontes Inter para tipografia.
+# 🚀 Funcionalidades
 
-## Instalação
+✅ Cadastro de usuário\
+✅ Barra de progresso no formulário de cadastro\
+✅ Login com validação de email e senha\
+✅ Armazenamento de usuários no LocalStorage\
+✅ Redirecionamento para página Home\
+✅ Exibição do nome do usuário logado
 
-1. Clone o repositório:
-   ```
-   git clone https://github.com/yourusername/LoginForm.git
-   ```
-2. Navegue para o diretório do projeto:
-   ```
-   cd LoginForm
-   ```
-3. Abra `index.html` no seu navegador web preferido.
+------------------------------------------------------------------------
 
-Nenhuma dependência adicional ou etapas de compilação são necessárias.
+# 📁 Estrutura do Projeto
 
-## Uso
+    /project-root
+    │
+    ├── index.html
+    ├── script.html
+    ├── style.css
+    ├── /home
+    │   └── home.html
+    |   └── home.js
+    |   └── homeStyle.css
+    │
+    ├── /login
+    |   └── login.html
+    |   └── login.js
+    |   └── loginStyle.css
+    ├── /class
+    │   └── user.js
+    │
+    │
+    └── README.md
 
-1. Abra o arquivo `index.html` em um navegador web.
-2. Preencha o formulário de registro:
-   - Digite seu nome completo.
-   - Forneça um endereço de email válido.
-   - Crie uma senha.
-   - Confirme a senha.
-3. Clique no ícone de olho ao lado dos campos de senha para alternar a visibilidade.
-4. Clique no botão "Submit" para registrar.
-5. Se as senhas não corresponderem, um alerta o notificará. Caso contrário, uma mensagem de sucesso aparecerá.
+------------------------------------------------------------------------
 
-## Estrutura do Projeto
+# 🧠 Como Funciona
 
-- `index.html`: Arquivo HTML principal contendo a estrutura do formulário.
-- `style.css`: Arquivo CSS para estilização do formulário e layout da página.
-- `script.js`: Arquivo JavaScript lidando com alternâncias de senha e lógica de envio de formulário.
-- `README.md`: Este arquivo, fornecendo documentação do projeto.
+## 📌 Cadastro
 
-## Contribuição
+1.  Usuário preenche:
+    -   Nome
+    -   Email
+    -   Senha
+    -   Confirmação de senha
+2.  Sistema:
+    -   Valida se as senhas coincidem
+    -   Gera um ID único (`crypto.randomUUID()`)
+    -   Salva no LocalStorage:
 
-Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
+```{=html}
+<!-- -->
+```
+    user_<id>
 
-## Screenshot
+Exemplo:
 
-![PreviewImage](preview/image.png)
+``` json
+{
+  "id": "uuid",
+  "name": "Juan",
+  "email": "juan@email.com",
+  "password": "123"
+}
+```
 
-## Para Teste
-https://loginform-c5kv.onrender.com
+------------------------------------------------------------------------
+
+## Screenshots
+![Home](./preview/home.png)
+![Login](./preview/login.png)
+![Register](./preview/register.png)
+------------------------------------------------------------------------
+## 📌 Login
+
+1.  Usuário digita email e senha\
+2.  Sistema percorre o LocalStorage\
+3.  Compara os dados\
+4.  Se bater:
+    -   Login realizado
+    -   Redireciona para:
+
+```{=html}
+<!-- -->
+```
+    home.html?id=<id_do_usuario>
+
+------------------------------------------------------------------------
+
+## 📌 Home
+
+1.  Pega o `id` da URL\
+2.  Busca no LocalStorage\
+3.  Exibe o nome do usuário
+
+------------------------------------------------------------------------
+
+# 💾 Tecnologias Utilizadas
+
+-   HTML5
+-   CSS3
+-   JavaScript (ES6+)
+-   LocalStorage API
+
+------------------------------------------------------------------------
+
+# ▶️ Como Rodar
+
+## Opção 1
+
+Abrir `index.html` no navegador.
+
+## Opção 2 (recomendado)
+
+Usar Live Server no VS Code.
+
+------------------------------------------------------------------------
+
+# ⚠️ Aviso de Segurança
+
+Projeto educacional.
+
+❌ Senhas não criptografadas\
+❌ LocalStorage não é seguro para produção\
+❌ Sem backend real
+
+-----------------------------------------------
+
+# 👨‍💻 Autor
+
+Projeto para estudos de JavaScript.
+
+------------------------------------------------------------------------
+
+# ⭐ Licença
+
+Livre para estudo e modificação.
